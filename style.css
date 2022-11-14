@@ -48,6 +48,10 @@ section .container {
     padding-right: 0;
 }
 
+#services-section ul {
+    padding: 0;
+}
+
 .bloc-lg {
     padding: 100px 50px;
 }
@@ -187,7 +191,7 @@ section .container {
 
 .d-bloc .panel,
 .l-bloc {
-    color: rgba(0, 0, 0, .5);
+    color: rgba(0, 0, 0, 0.5);
 }
 
 .d-bloc .panel button:hover,
@@ -312,6 +316,10 @@ section .container {
     margin-right: -16px;
     float: right;
     z-index: 1;
+}
+
+li {
+    list-style-type: none;
 }
 
 .nav > li {
@@ -676,7 +684,7 @@ a {
 }
 
 p {
-    font-size: 16px;
+    font-size: 14pt;
 }
 
 .tight-width-whitespace {
@@ -703,8 +711,7 @@ h3 {
 
 .med-width-whitespace {
     max-width: 800px;
-    margin: auto auto auto auto;
-    box-shadow: 0px 0px 0px #000000;
+    margin: auto;
 }
 
 h1 {
@@ -1015,4 +1022,31 @@ h4 {
     .bloc-mob-center-text {
         text-align: center;
     }
+}
+
+/* ========================================= */
+
+.outline {
+    outline: 1px solid black;
+}
+
+.quote {
+    font-style: italic;
+}
+
+blockquote {
+    margin: 0;
+    border: none;
+    font-size: 16pt;
+    font-style: italic;
+    color: hsl(0, 0%, 30%);
+}
+
+figcaption {
+    font-size: 14pt;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+#review-section div {
+    padding: 0 15px 30px 15px;
 }
