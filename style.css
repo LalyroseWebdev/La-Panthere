@@ -736,9 +736,8 @@ h4 {
     margin-bottom: 24px;
 }
 
-.portfolio-row {
-    margin-bottom: 44px;
-    margin-top: 50px;
+.portfolio-card {
+    margin-bottom: 50px;
 }
 
 .avatar {
@@ -1041,4 +1040,20 @@ figcaption {
 
 #review-section div {
     padding: 0 15px 30px 15px;
+}
+
+/* Container */
+#portfolio-section > div {
+    padding-top: 0;
+}
+
+#portfolio-section a {
+    display: flex;
+    justify-content: center;
+}
+
+/* Ligne d'en-tête */
+.portfolio-presentation {
+    margin: 80px 0;
+    font-size: 16pt;
 }
