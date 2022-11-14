@@ -680,7 +680,7 @@ a {
     text-align: center;
     font-weight: lighter;
     max-width: 520px;
-    margin: auto auto auto auto;
+    margin: auto;
 }
 
 p {
@@ -689,12 +689,12 @@ p {
 
 .tight-width-whitespace {
     max-width: 600px;
-    margin: auto auto auto auto;
+    margin: auto;
 }
 
 .social {
     max-width: 400px;
-    margin: auto auto auto auto;
+    margin: auto;
 }
 
 h2 {
@@ -745,9 +745,9 @@ h4 {
     box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.3);
 }
 
-.black-background {
-    background-color: rgba(165, 147, 99, 0.7);
-    padding: 40px 40px 40px 40px;
+.bcg-black {
+    background-color: hsl(44, 27%, 52%);
+    padding: 40px;
 }
 
 .bold-link {
@@ -756,7 +756,7 @@ h4 {
 }
 
 .bgc-white {
-    background-color: #FFFFFF;
+    background-color: #FFF;
 }
 
 .bgc-dark-slate-blue {
@@ -1025,14 +1025,6 @@ h4 {
 }
 
 /* ========================================= */
-
-.outline {
-    outline: 1px solid black;
-}
-
-.quote {
-    font-style: italic;
-}
 
 blockquote {
     margin: 0;
