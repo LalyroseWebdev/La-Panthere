@@ -275,10 +275,6 @@ section .container {
     padding-left: 0;
 }
 
-#hero-section h1 {
-    font-size: 32px;
-}
-
 .navbar {
     margin-bottom: 0;
     z-index: 1;
@@ -708,7 +704,7 @@ h3 {
 }
 
 h1 {
-    font-size: 38px;
+    font-size: 24pt;
     color: #333333!important;
 }
 
