@@ -48,10 +48,6 @@ section .container {
     padding-right: 0;
 }
 
-#services-section ul {
-    padding: 0;
-}
-
 .bloc-lg {
     padding: 100px 50px;
 }
@@ -691,6 +687,7 @@ p {
 .social {
     max-width: 400px;
     margin: auto;
+    padding: 30px 0;
 }
 
 h2 {
@@ -1028,6 +1025,11 @@ figcaption {
     color: rgba(0, 0, 0, 0.6);
 }
 
+/* Lists */
+ul {
+    padding: 0;
+}
+
 #review-section div {
     padding: 0 15px 30px 15px;
 }
@@ -1043,11 +1045,21 @@ figcaption {
 }
 
 /* Ligne d'en-tête */
-.portfolio-presentation {
+#portfolio-presentation {
     margin: 80px 0;
     font-size: 16pt;
 }
 
 #contact-section p {
     font-size: 18pt;
+}
+
+/* Titres navigation */
+footer h3 {
+    text-transform: none;
+}
+
+/* Icônes réseaux sociaux */
+#reseaux-section li {
+    display: inline-block;
 }

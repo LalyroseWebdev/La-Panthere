@@ -25,7 +25,6 @@
 </head>
 
 <body>
-
 	<main>
 		
 		<header class="bgc-white l-bloc">
@@ -116,7 +115,7 @@
 		<section class="bgc-white bg-lines bg-repeat l-bloc" id="portfolio-section">
 			<div class="container bloc-lg">
 				<h2 class="row sr-only">Portfolio</h2>
-				<p class="row text-center portfolio-presentation">Nous travaillons avec beaucoup de clients, voici nos réalisations.</p>
+				<p class="row text-center" id="portfolio-presentation">Nous travaillons avec beaucoup de clients, voici nos réalisations.</p>
 				<div class="row tight-width-whitespace">
 					<!-- Carte 1 -->
 					<div class="col-sm-6 portfolio-card text-center">
@@ -196,28 +195,32 @@
 	<footer class="bgc-atomic-tangerine d-bloc">
 		<div class="container bloc-sm">
 
+			<h2 class="sr-only">Footer</h2>
 			<p class="text-center white">Agence La Panthère - Agence web basée à Lyon.</p>
 
 			<!-- Social media -->
-			<section class="row row-no-gutters social" aria-label="Réseaux sociaux">
-				<div class="col-sm-3 text-center">
-					<a class="social" href="https://twitter.com/LaPanthereWebdesignLyon" aria-label="Twitter"><span class="fa fa-twitter icon-md"></span></a>
-				</div>
-				<div class="col-sm-3 text-center">
-					<a class="social" href="https://www.facebook.com/LaPanthereWebdesignLyon" aria-label="Facebook"><span class="fa fa-facebook icon-md"></span></a>
-				</div>
-				<div class="col-sm-3 text-center">
-					<a class="social" href="https://dribbble.com/LaPanthereWebdesignLyon" aria-label="Dribble"><span class="fa fa-dribbble icon-md"></span></a>
-				</div>
-				<div class="col-sm-3 text-center">
-					<a class="social" href="https://www.instagram.com/LaPanthereWebdesignLyon/" aria-label="Instagram"><span class="fa fa-instagram icon-md"></span></a>
-				</div>
+			<section class="row row-no-gutters social text-center" aria-labelledby="reseaux" id="reseaux-section">
+				<h3 class="sr-only" id="reseaux">Réseaux sociaux</h3>
+				<ul>
+					<li class="col-sm-3">
+						<a class="social" href="https://twitter.com/LaPanthereWebdesignLyon" aria-label="Twitter"><span class="fa fa-twitter icon-md"></span></a>
+					</li>
+					<li class="col-sm-3">
+						<a class="social" href="https://www.facebook.com/LaPanthereWebdesignLyon" aria-label="Facebook"><span class="fa fa-facebook icon-md"></span></a>
+					</li>
+					<li class="col-sm-3">
+						<a class="social" href="https://dribbble.com/LaPanthereWebdesignLyon" aria-label="Dribble"><span class="fa fa-dribbble icon-md"></span></a>
+					</li>
+					<li class="col-sm-3">
+						<a class="social" href="https://www.instagram.com/LaPanthereWebdesignLyon/" aria-label="Instagram"><span class="fa fa-instagram icon-md"></span></a>
+					</li>
+				</ul>
 			</section>
 
 			<!-- Footer navigation -->
 			<nav class="row" aria-label="footer">
 				<div class="col-sm-4">
-					<h4 class="white">Partenaires</h4>
+					<h3 class="white">Partenaires</h3>
 					<ul>
 						<li><a href="voiture.com">voiture.com</a></li>
 						<li><a href="pizza.com">pizza.com</a></li>
@@ -226,7 +229,7 @@
 					</ul>		
 				</div>
 				<div class="col-sm-4">
-					<h4 class="white">Annuaires liste 1</h4>
+					<h3 class="white">Annuaires liste 1</h3>
 					<ul>
 						<li><a href="annuaireagence.com">annuaireagence.com</a></li>
 						<li><a href="annuaireseo.com">annuaireseo.com</a></li>
@@ -240,7 +243,7 @@
 					</ul>
 				</div>
 				<div class="col-sm-4">
-					<h4 class="white">Annuaires liste 2</h4>
+					<h3 class="white">Annuaires liste 2</h3>
 					<ul>
 						<li><a href="betterseo.com">betterseo.com</a></li>
 						<li><a href="ameliorerseo.com">ameliorerseo.com</a></li>
