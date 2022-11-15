@@ -671,10 +671,6 @@ a {
     margin: auto;
 }
 
-p {
-    font-size: 14pt;
-}
-
 .tight-width-whitespace {
     max-width: 600px;
     margin: auto;
@@ -687,7 +683,7 @@ p {
 }
 
 h2 {
-    font-size: 22px;
+    font-size: 20pt;
     line-height: 1.4em;
 }
 
@@ -867,8 +863,8 @@ h4 {
     h6,
     p,
     #disqus_thread {
-        padding-left: 10px!important;
-        padding-right: 10px!important;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     .b-parallax {
         background-attachment: scroll;
@@ -1008,6 +1004,10 @@ h4 {
 
 /* ========================================= */
 
+p, label {
+    font-size: 14pt;
+}
+
 blockquote {
     margin: 0;
     border: none;
@@ -1024,6 +1024,15 @@ figcaption {
 /* Lists */
 ul {
     padding: 0;
+}
+
+/* Titres navigation */
+footer h3 {
+    text-transform: none;
+}
+
+#hero-section p {
+    font-size: 16pt;
 }
 
 #review-section div {
@@ -1046,16 +1055,33 @@ ul {
     font-size: 16pt;
 }
 
+/* Page d'accueil "Contactez-nous" */
 #contact-section p {
     font-size: 18pt;
-}
-
-/* Titres navigation */
-footer h3 {
-    text-transform: none;
 }
 
 /* Icônes réseaux sociaux */
 #reseaux-section li {
     display: inline-block;
+}
+
+#contact-form {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* "Formulaire de contact" */
+#contact-form-heading {
+    padding-left: 0;
+}
+
+#coordonnees {
+    margin-top: 120px;
+}
+
+@media only screen and (min-width: 767px) {
+    #coordonnees {
+        margin-top: 0;
+        padding-left: 100px;
+    }
 }
