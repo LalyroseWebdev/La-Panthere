@@ -427,7 +427,7 @@ nav .caret {
 .btn-d:hover,
 .btn-d:focus {
     color: #FFF;
-    background: rgba(0, 0, 0, .3);
+    background: rgba(0, 0, 0, .4);
 }
 
 .btn-clean {
@@ -695,11 +695,6 @@ h4 {
 
 .avatar {
     box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.3);
-}
-
-.bg-black {
-    background-color: hsl(44, 27%, 52%);
-    padding: 40px;
 }
 
 .bold-link {
@@ -1009,6 +1004,26 @@ footer h3 {
 
 .brown {
     color: #461A06;
+}
+
+.bg-darker:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .4);
+}
+
+.bg-darkest:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.65);
 }
 
 #hero-section p {
