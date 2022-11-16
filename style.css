@@ -9,7 +9,7 @@ body {
 
 a,
 button {
-    transition: all .3s ease-in-out;
+    transition: background-color .3s ease-in-out;
     outline: none!important;
 }
 
@@ -109,40 +109,6 @@ section .container {
 
 .d-bloc .divider-h span {
     border-color: rgba(255, 255, 255, .2);
-}
-
-.d-bloc .a-btn,
-.d-bloc .navbar a,
-.d-bloc .navbar-brand,
-.d-bloc a .icon-sm,
-.d-bloc a .icon-md,
-.d-bloc a .icon-lg,
-.d-bloc a .icon-xl,
-.d-bloc h1 a,
-.d-bloc h2 a,
-.d-bloc h3 a,
-.d-bloc h4 a,
-.d-bloc h5 a,
-.d-bloc h6 a,
-.d-bloc p a {
-    color: rgba(255, 255, 255, .6);
-}
-
-.d-bloc .a-btn:hover,
-.d-bloc .navbar a:hover,
-.d-bloc .navbar-brand:hover,
-.d-bloc a:hover .icon-sm,
-.d-bloc a:hover .icon-md,
-.d-bloc a:hover .icon-lg,
-.d-bloc a:hover .icon-xl,
-.d-bloc h1 a:hover,
-.d-bloc h2 a:hover,
-.d-bloc h3 a:hover,
-.d-bloc h4 a:hover,
-.d-bloc h5 a:hover,
-.d-bloc h6 a:hover,
-.d-bloc p a:hover {
-    color: rgba(255, 255, 255, 1);
 }
 
 .d-bloc .navbar-toggle .icon-bar {
@@ -645,11 +611,10 @@ h4,
 h5,
 h6,
 p,
-label,
-a {
+label {
     font-family: "helvetica";
     font-weight: 400;
-    color: #575757!important;
+    color: #575757;
 }
 
 .container {
@@ -694,7 +659,7 @@ h3 {
     font-size: 18px;
     text-transform: uppercase;
     font-weight: 700;
-    color: #333333!important;
+    color: #461A06!important;
 }
 
 .med-width-whitespace {
@@ -1011,6 +976,14 @@ p, a, label {
     font-size: 14pt;
 }
 
+a {
+    color: #461A06;
+}
+
+a:hover {
+    color: #B84510;
+}
+
 blockquote {
     margin: 0;
     border: none;
@@ -1032,6 +1005,10 @@ ul {
 /* Titres navigation */
 footer h3 {
     text-transform: none;
+}
+
+.brown {
+    color: #461A06;
 }
 
 #hero-section p {
