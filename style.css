@@ -72,10 +72,6 @@ section .container {
     background: repeat;
 }
 
-.bg-t-edge {
-    background: top no-repeat;
-}
-
 .bg-paper::before {
     content: "";
     background-size: 2px 2px;
@@ -189,7 +185,7 @@ section .container {
 .l-bloc h5 a,
 .l-bloc h6 a,
 .l-bloc p a {
-    color: rgba(0, 0, 0, .6);
+    color: #575757;
 }
 
 .d-bloc .panel .a-btn:hover,
@@ -207,7 +203,7 @@ section .container {
 .l-bloc h5 a:hover,
 .l-bloc h6 a:hover,
 .l-bloc p a:hover {
-    color: rgba(0, 0, 0, 1);
+    color: #344373;
 }
 
 .l-bloc .navbar-toggle .icon-bar {
@@ -408,15 +404,15 @@ nav .caret {
     border-radius: 40px;
     padding: 12px 28px;
     font-family: "helvetica";
-    font-size: 16px;
+    font-size: 14pt;
     font-weight: 700;
-    color: #FFFFFF!important;
-    background: #F3976C;
+    color: #461A06!important;
+    background: #F49F77;
     text-transform: uppercase;
 }
 
 .btn:hover {
-    background: #c27956;
+    background: #EF763E;
 }
 
 .btn.pull-right {
@@ -426,7 +422,7 @@ nav .caret {
 .btn-d,
 .btn-d:hover,
 .btn-d:focus {
-    color: #FFF;
+    color: #FFF!important;
     background: rgba(0, 0, 0, .4);
 }
 
@@ -611,6 +607,7 @@ h4,
 h5,
 h6,
 p,
+a,
 label {
     font-family: "helvetica";
     font-weight: 400;
@@ -707,15 +704,15 @@ h4 {
 }
 
 .bgc-dark-slate-blue {
-    background-color: #364577;
+    background-color: #303E6C;
 }
 
 .bgc-atomic-tangerine {
-    background-color: #F3976C;
+    background-color: #F49F77;
 }
 
 .tc-tangerine {
-    color: #F3976C!important;
+    color: #F49F77!important;
 }
 
 .ltc-white {
@@ -727,7 +724,7 @@ h4 {
 }
 
 .ltc-atomic-tangerine {
-    color: #F3976C!important;
+    color: #F49F77!important;
 }
 
 .ltc-atomic-tangerine:hover {
@@ -735,8 +732,8 @@ h4 {
 }
 
 .icon-dark-slate-blue {
-    color: #364577!important;
-    border-color: #364577!important;
+    color: #303E6C!important;
+    border-color: #303E6C!important;
 }
 
 .bg-dots {
@@ -976,7 +973,7 @@ a {
 }
 
 a:hover {
-    color: #B84510;
+    color: #303E6C;
 }
 
 blockquote {
@@ -1013,7 +1010,7 @@ footer h3 {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, .4);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .bg-darkest:before {
@@ -1023,7 +1020,7 @@ footer h3 {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.65);
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 #hero-section p {
