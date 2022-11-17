@@ -1,11 +1,250 @@
+/* Variables de couleur */
+:root {
+    --color-primary: hsl(19, 85%, 69%);
+    --color-secondary: hsl(19, 85%, 15%);
+    --color-tertiary: hsl(226, 38%, 31%);
+    
+    --color-primary-darker: hsl(19, 85%, 59%);
+
+    --color-text: hsl(0, 0%, 34%);
+}
+
+
+p, a, label {
+    font-size: 14pt;
+}
+
+a {
+    color: var(--color-secondary);
+}
+
+a:hover {
+    color: var(--color-tertiary);
+}
+
+blockquote {
+    margin: 0;
+    border: none;
+    font-size: 16pt;
+    font-style: italic;
+    color: hsl(0, 0%, 30%);
+}
+
+figcaption {
+    font-size: 12pt;
+}
+
+/* Listes */
+ul {
+    padding: 0;
+}
+
+/* Titres navigation */
+footer h3 {
+    text-transform: none;
+}
+
+#hero-section p {
+    font-size: 16pt;
+}
+
+#review-section div {
+    padding: 0 15px 30px 15px;
+}
+
+#portfolio-section > .container {
+    padding-top: 0;
+}
+
+#portfolio-section a {
+    display: flex;
+    justify-content: center;
+}
+
+#portfolio-presentation {
+    margin: 80px 0;
+    font-size: 16pt;
+}
+
+/* Page d'accueil "Contactez-nous" */
+#contact-section p {
+    font-size: 18pt;
+}
+
+/* Icônes réseaux sociaux */
+#reseaux-section li {
+    display: inline-block;
+}
+
+#contact-form {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#contact-form h2 {
+    padding-left: 0;
+}
+
+#contact-form label {
+    font-weight: 400;
+}
+
+#coordonnees {
+    margin-top: 100px;
+}
+
+@media only screen and (min-width: 767px) {
+    #coordonnees {
+        margin-top: 0;
+        padding-left: 100px;
+    }
+}
+
+/* ====================================================== */
+
 body {
     margin: 0;
     padding: 0;
-    background: #FFF;
+    font-family: "Helvetica", sans-serif;
+    color: var(--color-text);
+    background: #ffffff;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
+/* ======= START Headings ======= */
+
+h1 {
+    font-size: 24pt;
+    color: var(--color-primary);
+}
+
+h2 {
+    font-size: 20pt;
+    line-height: 1.4em;
+    color: var(--color-secondary);
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--color-secondary);
+}
+
+h4 {
+    color: var(--color-secondary);
+}
+
+/* ======= END Headings ======= */
+/* ========== START Couleurs ======= */
+
+.tc-white {
+    color: #FFFFFF;
+}
+
+.tc-white:hover {
+    color: hsl(0, 0%, 80%);
+}
+
+.tc-tangerine {
+    color: var(--color-primary);
+}
+
+.tc-tangerine:hover {
+    color: var(--color-primary-darker);
+}
+
+.tc-brown {
+    color: var(--color-secondary);
+}
+
+.bgc-white {
+    background-color: hsl(0, 0%, 100%);
+}
+
+.bgc-tangerine {
+    background-color: var(--color-primary);
+}
+
+.bgc-dark-slate-blue {
+    background-color: var(--color-tertiary);
+}
+
+.icon-dark-slate-blue {
+    color: var(--color-tertiary);
+    border-color: var(--color-tertiary);
+}
+
+/* ======= END Couleurs ======= */
+/* ======= START Backgrounds ======= */
+
+.bg-t-edge,
+.bg-repeat {
+    -webkit-background-size: auto!important;
+    -moz-background-size: auto!important;
+    -o-background-size: auto!important;
+    background-size: auto!important;
+}
+
+.bg-repeat {
+    background: repeat;
+}
+
+.bg-dots {
+    background-image: url("img/background-dots.png");
+}
+
+.bg-lines {
+    background-image: url("img/background-lines.png");
+}
+
+.bg-banniere {
+    background-image: url("img/la-panthere-banniere.jpg");
+}
+
+.bg-presentation {
+    background-image: url("img/illustration-background-presentation-entreprise.jpg");
+}
+
+.bg-parallax {
+    background-attachment: fixed;
+}
+
+.bg-paper::before {
+    content: "";
+    background-size: 2px 2px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url("img/background-paper.png");
+    background-size: 280px 280px;
+}
+
+.bg-darker:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.bg-darkest:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* ======= END Backgrounds ======= */
 
 a,
 button {
@@ -16,10 +255,6 @@ button {
 a:hover {
     text-decoration: none;
     cursor: pointer;
-}
-
-a:focus {
-    outline: 5px solid black;
 }
 
 #page-loading-blocs-notifaction {
@@ -60,33 +295,7 @@ section .container {
     padding: 20px 50px;
 }
 
-.bg-t-edge,
-.bg-repeat {
-    -webkit-background-size: auto!important;
-    -moz-background-size: auto!important;
-    -o-background-size: auto!important;
-    background-size: auto!important;
-}
 
-.bg-repeat {
-    background: repeat;
-}
-
-.bg-paper::before {
-    content: "";
-    background-size: 2px 2px;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: url("img/background-paper.png");
-    background-size: 280px 280px;
-}
-
-.b-parallax {
-    background-attachment: fixed;
-}
 
 .d-bloc {
     color: rgba(255, 255, 255, .7);
@@ -148,10 +357,10 @@ section .container {
     border-color: rgba(0, 0, 0, .3);
 }
 
-.d-bloc .panel,
+/* .d-bloc .panel,
 .l-bloc {
     color: rgba(0, 0, 0, 0.5);
-}
+} */
 
 .d-bloc .panel button:hover,
 .l-bloc button:hover {
@@ -186,7 +395,7 @@ section .container {
 .l-bloc h5 a,
 .l-bloc h6 a,
 .l-bloc p a {
-    color: #575757;
+    color: var(--color-text);
 }
 
 .d-bloc .panel .a-btn:hover,
@@ -204,7 +413,7 @@ section .container {
 .l-bloc h5 a:hover,
 .l-bloc h6 a:hover,
 .l-bloc p a:hover {
-    color: #344373;
+    color: var(--color-tertiary);
 }
 
 .l-bloc .navbar-toggle .icon-bar {
@@ -407,13 +616,14 @@ nav .caret {
     font-family: "helvetica";
     font-size: 14pt;
     font-weight: 700;
-    color: #461A06!important;
-    background: #F49F77;
     text-transform: uppercase;
+    color: var(--color-secondary);
+    background: var(--color-primary);
 }
 
 .btn:hover {
-    background: #EF763E;
+    color: var(--color-secondary);
+    background: var(--color-primary-darker);
 }
 
 .btn.pull-right {
@@ -465,7 +675,7 @@ nav .caret {
 }
 
 .form-control {
-    border: 2px solid #EF763E;
+    border: 2px solid var(--color-primary-darker);
     box-shadow: none;
 }
 
@@ -601,20 +811,6 @@ a[data-lightbox]:hover img {
     background: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-a,
-label {
-    font-family: "helvetica";
-    font-weight: 400;
-    color: #575757;
-}
-
 .container {
     max-width: 1000px;
 }
@@ -648,39 +844,14 @@ label {
     padding: 30px 0;
 }
 
-h2 {
-    font-size: 20pt;
-    line-height: 1.4em;
-}
-
-h3 {
-    font-size: 18px;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: #461A06;
-}
-
 .med-width-whitespace {
     max-width: 800px;
     margin: auto;
 }
 
-h1 {
-    font-size: 24pt;
-    color: #333333;
-}
-
-h4 {
-    color: #333333;
-}
-
 .icons {
     margin-bottom: 14px;
     margin-top: 24px;
-}
-
-.tc-white {
-    color: #FFFFFF;
 }
 
 .portfolio-thumb {
@@ -700,58 +871,7 @@ h4 {
     text-decoration: underline!important;
 }
 
-.bgc-white {
-    background-color: #FFF;
-}
 
-.bgc-dark-slate-blue {
-    background-color: #303E6C;
-}
-
-.bgc-atomic-tangerine {
-    background-color: #F49F77;
-}
-
-.tc-tangerine {
-    color: #F49F77!important;
-}
-
-.ltc-white {
-    color: #FFFFFF!important;
-}
-
-.ltc-white:hover {
-    color: #cccccc!important;
-}
-
-.ltc-atomic-tangerine {
-    color: #F49F77!important;
-}
-
-.ltc-atomic-tangerine:hover {
-    color: #c27956!important;
-}
-
-.icon-dark-slate-blue {
-    color: #303E6C!important;
-    border-color: #303E6C!important;
-}
-
-.bg-dots {
-    background-image: url("img/background-dots.png");
-}
-
-.bg-lines {
-    background-image: url("img/background-lines.png");
-}
-
-.bg-banniere {
-    background-image: url("img/la-panthere-banniere.jpg");
-}
-
-.bg-presentation {
-    background-image: url("img/illustration-background-presentation-entreprise.jpg");
-}
 
 @media (max-width: 1024px) {
     section {
@@ -961,116 +1081,3 @@ h4 {
 
 /* ========================================= */
 
-p, a, label {
-    font-size: 14pt;
-}
-
-a {
-    color: #461A06;
-}
-
-a:hover {
-    color: #303E6C;
-}
-
-blockquote {
-    margin: 0;
-    border: none;
-    font-size: 16pt;
-    font-style: italic;
-    color: hsl(0, 0%, 30%);
-}
-
-figcaption {
-    font-size: 14pt;
-    color: rgba(0, 0, 0, 0.6);
-}
-
-/* Lists */
-ul {
-    padding: 0;
-}
-
-/* Titres navigation */
-footer h3 {
-    text-transform: none;
-}
-
-.tc-brown {
-    color: #461A06;
-}
-
-.bg-darker:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-.bg-darkest:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.7);
-}
-
-#hero-section p {
-    font-size: 16pt;
-}
-
-#review-section div {
-    padding: 0 15px 30px 15px;
-}
-
-/* Container */
-#portfolio-section > div {
-    padding-top: 0;
-}
-
-#portfolio-section a {
-    display: flex;
-    justify-content: center;
-}
-
-/* Ligne d'en-tête */
-#portfolio-presentation {
-    margin: 80px 0;
-    font-size: 16pt;
-}
-
-/* Page d'accueil "Contactez-nous" */
-#contact-section p {
-    font-size: 18pt;
-}
-
-/* Icônes réseaux sociaux */
-#reseaux-section li {
-    display: inline-block;
-}
-
-#contact-form {
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-/* "Formulaire de contact" */
-#contact-form-heading {
-    padding-left: 0;
-}
-
-#coordonnees {
-    margin-top: 100px;
-}
-
-@media only screen and (min-width: 767px) {
-    #coordonnees {
-        margin-top: 0;
-        padding-left: 100px;
-    }
-}
