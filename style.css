@@ -81,6 +81,7 @@ section .container {
     left: 0;
     right: 0;
     background: url("img/background-paper.png");
+    background-size: 280px 280px;
 }
 
 .b-parallax {
@@ -396,7 +397,7 @@ nav .caret {
 
 .mg-lg {
     margin-top: 10px;
-    margin-bottom: 40px;
+    margin-bottom: 25px;
 }
 
 .btn {
@@ -464,7 +465,7 @@ nav .caret {
 }
 
 .form-control {
-    border-color: rgba(0, 0, 0, .1);
+    border: 2px solid #EF763E;
     box-shadow: none;
 }
 
@@ -656,7 +657,7 @@ h3 {
     font-size: 18px;
     text-transform: uppercase;
     font-weight: 700;
-    color: #461A06!important;
+    color: #461A06;
 }
 
 .med-width-whitespace {
@@ -666,11 +667,11 @@ h3 {
 
 h1 {
     font-size: 24pt;
-    color: #333333!important;
+    color: #333333;
 }
 
 h4 {
-    color: #333333!important;
+    color: #333333;
 }
 
 .icons {
@@ -678,8 +679,8 @@ h4 {
     margin-top: 24px;
 }
 
-.white {
-    color: #FFFFFF!important;
+.tc-white {
+    color: #FFFFFF;
 }
 
 .portfolio-thumb {
@@ -894,10 +895,6 @@ h4 {
         float: left;
         margin-left: 10px;
     }
-    section {
-        padding-left: 0;
-        padding-right: 0;
-    }
     .bloc-xxl,
     .bloc-xl,
     .bloc-lg {
@@ -999,7 +996,7 @@ footer h3 {
     text-transform: none;
 }
 
-.brown {
+.tc-brown {
     color: #461A06;
 }
 
@@ -1068,7 +1065,7 @@ footer h3 {
 }
 
 #coordonnees {
-    margin-top: 120px;
+    margin-top: 100px;
 }
 
 @media only screen and (min-width: 767px) {
