@@ -144,7 +144,7 @@ h4 {
     color: #FFFFFF;
 }
 
-.tc-white:hover {
+.ltc-white:hover {
     color: hsl(0, 0%, 80%);
 }
 
@@ -152,7 +152,7 @@ h4 {
     color: var(--color-primary);
 }
 
-.tc-tangerine:hover {
+.ltc-tangerine:hover {
     color: var(--color-primary-darker);
 }
 
