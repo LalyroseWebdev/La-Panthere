@@ -97,6 +97,13 @@ footer h3 {
     margin-top: 100px;
 }
 
+/* Réinitialise row margin/padding à 0 */
+/* pour éviter débordement horizontal sur mobile */
+.row {
+    margin: 0;
+    padding: 0;
+}
+
 /* Scroll horizontal quand débordement */
 /* Exemple : adresse mail de contact si l'utilisateur règle les textes à 200% sur mobile */
 .overflow-x {
@@ -118,7 +125,7 @@ body {
     font-family: "Helvetica", sans-serif;
     color: var(--color-text);
     background: #ffffff;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -304,8 +311,6 @@ section .container {
 .bloc-sm {
     padding: 20px 50px;
 }
-
-
 
 .d-bloc {
     color: rgba(255, 255, 255, .7);
@@ -928,7 +933,7 @@ a[data-lightbox]:hover img {
     }
     main,
     #hero-bloc {
-        overflow-x: hidden;
+        /* overflow-x: hidden; */
         position: relative;
     }
     .bloc-group,
@@ -944,7 +949,7 @@ a[data-lightbox]:hover img {
 
 @media (max-width: 767px) {
     main {
-        overflow-x: hidden;
+        /* overflow-x: hidden; */
         position: relative;
     }
     h1,
@@ -1010,7 +1015,7 @@ a[data-lightbox]:hover img {
     }
     .navbar-collapse {
         padding: 0;
-        overflow-x: hidden;
+        /* overflow-x: hidden; */
         -webkit-box-shadow: none;
         box-shadow: none;
     }
