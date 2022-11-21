@@ -12,4 +12,4 @@ La Panthère is a web design agency who needs a remake of their website for bett
 
 ## Technologies used
 
-HTML5, CSS3, Bootstrap5, Javascript, PHP
+HTML5, CSS3, Bootstrap3, Javascript, PHP
