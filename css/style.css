@@ -203,19 +203,19 @@ h4 {
 }
 
 .bg-dots {
-    background-image: url("img/background-dots.png");
+    background-image: url("../img/background-dots.png");
 }
 
 .bg-lines {
-    background-image: url("img/background-lines.png");
+    background-image: url("../img/background-lines.png");
 }
 
 .bg-banniere {
-    background-image: url("img/la-panthere-banniere.jpg");
+    background-image: url("../img/la-panthere-banniere.jpg");
 }
 
 .bg-presentation {
-    background-image: url("img/illustration-background-presentation-entreprise.jpg");
+    background-image: url("../img/illustration-background-presentation-entreprise.jpg");
 }
 
 .bg-parallax {
@@ -230,7 +230,7 @@ h4 {
     bottom: 0;
     left: 0;
     right: 0;
-    background: url("img/background-paper.png");
+    background: url("../img/background-paper.png");
     background-size: 280px 280px;
 }
 
@@ -273,7 +273,7 @@ a:hover {
     bottom: 0;
     width: 100%;
     z-index: 100000;
-    background: #FFFFFF url("img/pageload-spinner.gif") no-repeat center center;
+    background: #FFFFFF url("../img/pageload-spinner.gif") no-repeat center center;
 }
 
 section {
