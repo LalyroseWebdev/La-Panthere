@@ -48,8 +48,12 @@ footer h3 {
     font-size: 16pt;
 }
 
+#services-section li {
+    padding: 20px;
+}
+
 #review-section div {
-    padding: 0 15px 30px 15px;
+    padding: 15px 15px 30px 15px;
 }
 
 #portfolio-section > .container {
@@ -91,6 +95,12 @@ footer h3 {
 
 #coordonnees {
     margin-top: 100px;
+}
+
+/* Scroll horizontal quand débordement */
+/* Exemple : adresse mail de contact si l'utilisateur règle les textes à 200% sur mobile */
+.overflow-x {
+    overflow-x: scroll;
 }
 
 @media only screen and (min-width: 767px) {
