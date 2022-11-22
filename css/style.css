@@ -703,7 +703,6 @@ nav .caret {
     right: 20px;
     width: 40px;
     height: 40px;
-    opacity: 0;
     z-index: 500;
     transition: all .3s ease-in-out;
 }
