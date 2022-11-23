@@ -1,4 +1,4 @@
-/* Variables de couleur */
+/* Variables */
 :root {
     --color-primary: hsl(19, 85%, 69%);
     --color-secondary: hsl(19, 85%, 15%);
@@ -8,166 +8,7 @@
 
     --color-text: hsl(0, 0%, 34%);
 }
-
-/* ======= START Navigation au clavier ======= */
-
-/* Élements outline marron */
-
-a:focus, 
-.btn:focus,
-.navbar-toggle:focus {
-    outline: 5px solid var(--color-secondary);
-    text-decoration: none;
-}
-
-a:focus:not(:focus-visible), 
-.btn:focus:not(:focus-visible),
-.navbar-toggle:focus:not(:focus-visible) {
-    outline: none;
-}
-
-/* Boutons fond blanc */
-
-.btn:focus {
-    background-color: hsl(0, 0%, 100%);
-}
-
-.btn:focus:not(:focus-visible) {
-    background-color: var(--color-primary);
-}
-
-/* Inputs formulaire outline marron */
-.form-control:focus {
-    outline: 3px solid var(--color-secondary);
-    border-color: transparent;
-}
-
-/* ======= END Navigation au clavier ======= */
-
-
-p, a, label {
-    font-size: 14pt;
-}
-
-a {
-    color: var(--color-secondary);
-}
-
-a:hover {
-    color: var(--color-tertiary);
-}
-
-blockquote {
-    margin: 0;
-    border: none;
-    font-size: 16pt;
-    font-style: italic;
-    color: hsl(0, 0%, 30%);
-}
-
-figcaption {
-    font-size: 12pt;
-}
-
-/* Listes */
-ul {
-    padding: 0;
-}
-
-/* Titres navigation */
-footer h3 {
-    text-transform: none;
-}
-
-#hero-section p {
-    font-size: 16pt;
-}
-
-#services-section li {
-    padding: 20px;
-}
-
-#review-section div {
-    padding: 15px 15px 30px 15px;
-}
-
-#portfolio-section > .container {
-    padding-top: 0;
-}
-
-/* Ligne d'introduction de section */
-#portfolio-presentation {
-    margin: 80px 0;
-    font-size: 16pt;
-}
-
-.portfolio-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 50px;
-}
-
-/* Image cliquable */
-.portfolio-card a {
-    width: fit-content;
-    height: fit-content;
-    margin-bottom: 24px;
-}
-
-/* "Contactez-nous" en page d'accueil */
-#contact-section p {
-    font-size: 18pt;
-}
-
-#contact-form {
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-#contact-form h2 {
-    padding-left: 0;
-}
-
-#contact-form label {
-    font-weight: 400;
-}
-
-#coordonnees {
-    margin-top: 100px;
-}
-
-/* Place en ligne les icônes de réseaux du footer */
-#reseaux-section li {
-    display: inline-block;
-}
-
-/* Liens partenaires */
-.footer-link {
-    padding: 5px;
-}
-
-/* Réinitialise row margin/padding à 0 */
-/* pour éviter débordement horizontal sur mobile */
-.row {
-    margin: 0;
-    padding: 0;
-}
-
-/* Scroll horizontal quand débordement */
-/* Exemple : adresse mail de contact si l'utilisateur règle les textes à 200% sur mobile */
-/* .overflow-x {
-    overflow-x: scroll;
-} */
-
-@media only screen and (min-width: 767px) {
-    #coordonnees {
-        margin-top: 0;
-        padding-left: 100px;
-    }
-}
-
-/* ====================================================== */
+/* ======= START Général ======= */
 
 body {
     margin: 0;
@@ -175,12 +16,9 @@ body {
     font-family: "Helvetica", sans-serif;
     color: var(--color-text);
     background: #ffffff;
-    /* overflow-x: hidden; */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-
-/* ======= START Headings ======= */
 
 h1 {
     font-size: 24pt;
@@ -204,7 +42,192 @@ h4 {
     color: var(--color-secondary);
 }
 
-/* ======= END Headings ======= */
+p, a, label {
+    font-size: 14pt;
+}
+
+a, button {
+    transition: background-color .3s ease-in-out;
+    outline: none;
+}
+
+a {
+    color: var(--color-secondary);
+}
+
+a:hover {
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--color-tertiary);
+}
+
+ul {
+    padding: 0;
+}
+
+blockquote {
+    margin: 0;
+    border: none;
+    font-size: 16pt;
+    font-style: italic;
+    color: hsl(0, 0%, 30%);
+}
+
+figcaption {
+    font-size: 12pt;
+}
+
+section {
+    width: 100%;
+    clear: both;
+    background: 50% 50% no-repeat;
+    padding: 0 50px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+}
+
+section .container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* Réinitialise row margin/padding à 0 */
+/* pour éviter débordement horizontal sur mobile */
+.row {
+    margin: 0;
+    padding: 0;
+}
+
+/* Retour à la ligne forcé quand débordement pour que le texte reste visible */
+/* Exemple : adresse mail de contact si l'utilisateur règle les textes à 200% */
+.word-break {
+    word-break: break-word;
+}
+
+/* ======= END Général ======= */
+/* ======= START Navigation au clavier ======= */
+
+/* Élements interactifs = outline marron */
+
+a:focus, 
+.btn:focus,
+.navbar-toggle:focus {
+    outline: 5px solid var(--color-secondary);
+    text-decoration: none;
+}
+
+a:focus:not(:focus-visible), 
+.btn:focus:not(:focus-visible),
+.navbar-toggle:focus:not(:focus-visible) {
+    outline: none;
+}
+
+/* Inputs formulaire = outline marron */
+
+.form-control:focus {
+    outline: 3px solid var(--color-secondary);
+    border-color: transparent;
+}
+
+/* Boutons = fond blanc */
+
+.btn:focus {
+    background-color: hsl(0, 0%, 100%);
+}
+
+.btn:focus:not(:focus-visible) {
+    background-color: var(--color-primary);
+}
+
+/* ======= END Navigation au clavier ======= */
+/* ======= START Styles footer ======= */
+
+/* Place en ligne les icônes de réseaux */
+#reseaux-section li {
+    display: inline-block;
+}
+
+/* "Partenaires" */
+footer h3 {
+    text-transform: none;
+}
+
+/* Padding pour meilleure lisibilité au focus clavier */
+.footer-link {
+    padding: 5px;
+}
+
+/* ======= END Styles footer ======= */
+/* ======= START Spécifique page d'accueil ======= */
+
+/* Phrase d'accroche */
+#hero-section p {
+    font-size: 16pt;
+}
+
+/* Espacement entre les catégories
+pour maintenir la lisibilité quand le texte est zoomé */
+#services-section li {
+    padding: 20px;
+}
+
+/* Bloc citation & légende */
+#review-section figure {
+    padding: 15px 15px 30px 15px;
+}
+
+/* Pas de padding en haut de section
+le padding est géré par #portfolio-presentation */
+#portfolio-section > .container {
+    padding-top: 0;
+}
+
+/* Ligne d'introduction de section */
+#portfolio-presentation {
+    margin: 80px 0;
+    font-size: 16pt;
+}
+
+.portfolio-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+/* Texte de demande de contact en page d'accueil
+Dernière section avant le footer */
+#contact-section p {
+    font-size: 18pt;
+}
+
+/* ======= END Spécifique page d'accueil ======= */
+/* ======= START Spécifique page de contact ======= */
+
+#contact-form {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#contact-form label {
+    font-weight: 400;
+}
+
+#coordonnees {
+    margin-top: 100px;
+}
+
+@media only screen and (min-width: 767px) {
+    #coordonnees {
+        margin-top: 0;
+        padding-left: 100px;
+    }
+}
+
+/* ======= END Spécifique page de contact ======= */
 /* ========== START Couleurs ======= */
 
 .tc-white {
@@ -313,17 +336,6 @@ h4 {
 
 /* ======= END Backgrounds ======= */
 
-a,
-button {
-    transition: background-color .3s ease-in-out;
-    outline: none;
-}
-
-a:hover {
-    text-decoration: none;
-    cursor: pointer;
-}
-
 #page-loading-blocs-notifaction {
     position: fixed;
     top: 0;
@@ -331,23 +343,6 @@ a:hover {
     width: 100%;
     z-index: 100000;
     background: #FFFFFF url("../img/pageload-spinner.gif") no-repeat center center;
-}
-
-section {
-    width: 100%;
-    clear: both;
-    background: 50% 50% no-repeat;
-    padding: 0 50px;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    position: relative;
-}
-
-section .container {
-    padding-left: 0;
-    padding-right: 0;
 }
 
 .bloc-lg {
@@ -769,6 +764,9 @@ nav .caret {
 a[data-lightbox] {
     position: relative;
     display: block;
+    margin-bottom: 24px;
+    width: fit-content;
+    height: fit-content;
     text-align: center;
 }
 
@@ -979,7 +977,6 @@ a[data-lightbox]:focus img {
     }
     main,
     #hero-bloc {
-        /* overflow-x: hidden; */
         position: relative;
     }
     .bloc-group,
@@ -995,7 +992,6 @@ a[data-lightbox]:focus img {
 
 @media (max-width: 767px) {
     main {
-        /* overflow-x: hidden; */
         position: relative;
     }
     h1,
@@ -1061,7 +1057,6 @@ a[data-lightbox]:focus img {
     }
     .navbar-collapse {
         padding: 0;
-        /* overflow-x: hidden; */
         -webkit-box-shadow: none;
         box-shadow: none;
     }
@@ -1112,6 +1107,9 @@ a[data-lightbox]:focus img {
     }
     form {
         padding: 5px;
+    }
+    form h2 {
+        padding-left: 0;
     }
     .close-lightbox {
         display: inline-block;
