@@ -17,6 +17,7 @@ a:focus,
 .btn:focus,
 .navbar-toggle:focus {
     outline: 5px solid var(--color-secondary);
+    text-decoration: none;
 }
 
 a:focus:not(:focus-visible), 
@@ -94,24 +95,29 @@ footer h3 {
     padding-top: 0;
 }
 
-#portfolio-section a {
-    display: flex;
-    justify-content: center;
-}
-
+/* Ligne d'introduction de section */
 #portfolio-presentation {
     margin: 80px 0;
     font-size: 16pt;
 }
 
-/* Page d'accueil "Contactez-nous" */
-#contact-section p {
-    font-size: 18pt;
+.portfolio-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
 }
 
-/* Icônes réseaux sociaux */
-#reseaux-section li {
-    display: inline-block;
+/* Image cliquable */
+.portfolio-card a {
+    width: fit-content;
+    height: fit-content;
+    margin-bottom: 24px;
+}
+
+/* "Contactez-nous" en page d'accueil */
+#contact-section p {
+    font-size: 18pt;
 }
 
 #contact-form {
@@ -129,6 +135,16 @@ footer h3 {
 
 #coordonnees {
     margin-top: 100px;
+}
+
+/* Place en ligne les icônes de réseaux du footer */
+#reseaux-section li {
+    display: inline-block;
+}
+
+/* Liens partenaires */
+.footer-link {
+    padding: 5px;
 }
 
 /* Réinitialise row margin/padding à 0 */
@@ -756,7 +772,8 @@ a[data-lightbox] {
     text-align: center;
 }
 
-a[data-lightbox]:hover::before {
+a[data-lightbox]:hover::before,
+a[data-lightbox]:focus::before {
     content: "+";
     position: absolute;
     top: 50%;
@@ -775,7 +792,8 @@ a[data-lightbox]:hover::before {
     -webkit-transform: translateY(-50%) translateX(-50%);
 }
 
-a[data-lightbox]:hover img {
+a[data-lightbox]:hover img,
+a[data-lightbox]:focus img {
     opacity: 0.6;
     -webkit-animation-fill-mode: none;
     animation-fill-mode: none;
@@ -890,7 +908,10 @@ a[data-lightbox]:hover img {
 .social {
     max-width: 400px;
     margin: auto;
-    padding: 30px 0;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .med-width-whitespace {
@@ -903,21 +924,13 @@ a[data-lightbox]:hover img {
     margin-top: 24px;
 }
 
-.portfolio-thumb {
-    margin-bottom: 24px;
-}
-
-.portfolio-card {
-    margin-bottom: 50px;
-}
-
 .avatar {
     box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.3);
 }
 
 .bold-link {
     font-weight: 900;
-    text-decoration: underline!important;
+    text-decoration: underline;
 }
 
 
