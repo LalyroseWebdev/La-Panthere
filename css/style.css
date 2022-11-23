@@ -9,6 +9,40 @@
     --color-text: hsl(0, 0%, 34%);
 }
 
+/* ======= START Navigation au clavier ======= */
+
+/* Élements outline marron */
+
+a:focus, 
+.btn:focus,
+.navbar-toggle:focus {
+    outline: 5px solid var(--color-secondary);
+}
+
+a:focus:not(:focus-visible), 
+.btn:focus:not(:focus-visible),
+.navbar-toggle:focus:not(:focus-visible) {
+    outline: none;
+}
+
+/* Boutons fond blanc */
+
+.btn:focus {
+    background-color: hsl(0, 0%, 100%);
+}
+
+.btn:focus:not(:focus-visible) {
+    background-color: var(--color-primary);
+}
+
+/* Inputs formulaire outline marron */
+.form-control:focus {
+    outline: 3px solid var(--color-secondary);
+    border-color: transparent;
+}
+
+/* ======= END Navigation au clavier ======= */
+
 
 p, a, label {
     font-size: 14pt;
@@ -266,7 +300,7 @@ h4 {
 a,
 button {
     transition: background-color .3s ease-in-out;
-    outline: none!important;
+    outline: none;
 }
 
 a:hover {
