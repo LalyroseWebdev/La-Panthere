@@ -806,8 +806,8 @@ a[data-lightbox]:focus img {
 
 #lightbox-modal .modal-dialog {
     width: 90%;
-    max-width: 900px;
-    margin: 0 auto 0;
+    max-width: 650px;
+    margin: 0 auto;
 }
 
 #lightbox-modal .modal-dialog img {
@@ -835,7 +835,7 @@ a[data-lightbox]:focus img {
     background: rgba(0, 0, 0, .5);
     border: none;
     line-height: 30px;
-    padding: 0 9px 5px;
+    padding: 5px 9px;
     opacity: 0.3;
 }
 
@@ -859,17 +859,17 @@ a[data-lightbox]:focus img {
 }
 
 .next-lightbox {
-    padding: 6px 8px 1px 13px;
+    padding: 6px 8px 6px 13px;
     right: 25px;
 }
 
 .prev-lightbox {
-    padding: 6px 13px 1px 10px;
+    padding: 6px 13px 6px 8px;
     left: 25px;
 }
 
 .snapshot-lb .modal-body {
-    padding-bottom: 45px;
+    padding-bottom: 75px;
 }
 
 .snapshot-lb .lightbox-caption {
