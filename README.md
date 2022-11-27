@@ -2,7 +2,7 @@
 
 Project 4 of the Web Developer course by OpenClassrooms
 
-![Screenshot of the website's home page with the navigation and hero section visible](../../../../../../C:/wamp64/www/03%20Sites%20web/2022/La%20Panthere/README%20Screenshot.png)
+![Screenshot of the website's home page with the navigation and hero section visible](README%20Screenshot.png)
 
 ## Live Demo
 
